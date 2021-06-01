@@ -5,10 +5,10 @@
   yum:
     name: httpd
     state: installed
-- name: custom index.html
-  copy:
-    src: index.html
-    dest: /var/www/html/index.html
+#- name: custom info.php
+ # copy:
+  #  src: info.php
+   # dest: /var/www/html/info.php
 
 - name: enable apache (httpd)
   service:

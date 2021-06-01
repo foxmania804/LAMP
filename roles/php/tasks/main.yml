@@ -1,0 +1,14 @@
+---
+# tasks file for php
+
+
+- name: Install php
+  yum:
+    name: ['php','php-mysql']
+    state: present
+
+- name: Restart Apache
+  service:
+    name: httpd
+    state: restarted
+... 
